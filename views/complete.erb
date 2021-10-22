@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,11 +47,21 @@
         
         
     <table>
-         <br><label>会社名</label>: <%= company %></label></br>
-         <br><label>氏名</label>: <%= name %></label></br>
-         <br><label>メール</label>: <%= mail %></label></br>
-         <br><label>電話番号</label>: <%= tel %></label></br>
-         <br><label>内容</label>: <%= content.gsub(/\r\n|\r|\n/, "<br>") %></label></br>
+         <tr>
+             <td>会社名: <%= company %></td>
+         </tr>
+         <tr>
+             <td>氏名: <%= name %></td>
+         </tr>
+         <tr>
+             <td>メール: <%= mail %></td>
+         </tr>
+         <tr>
+             <td>電話番号: <%= tel %></td>
+         </tr>
+         <tr>
+             <td>内容: <%= content.gsub(/\r\n|\r|\n/, "<br>") %></td>
+         </tr>
      </table>
      
      
